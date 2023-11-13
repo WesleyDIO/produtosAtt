@@ -32,10 +32,10 @@ public class Produto {
     private Double peso;
     @Column(nullable = false)
     private Double medida;
-    @Column(nullable = false)
-    private String fabricante;
-    @Column(nullable = false)
-    private String categoria;
+    @ManyToOne
+    private Fabricante fabricante;
+    @ManyToOne
+    private Categoria categoria;
 
 
 }
